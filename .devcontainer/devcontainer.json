@@ -23,7 +23,7 @@
                 },
                 "[typescriptreact]": {
                     "editor.defaultFormatter": "esbenp.prettier-vscode"
-                },
+                }
             },
             "extensions": [
                 "MS-CEINTL.vscode-language-pack-ja",
