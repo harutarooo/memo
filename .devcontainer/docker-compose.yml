@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  react-app:
+    container_name: memo-react
+    build:
+      args:
+        - NODE_VER=23.3.0
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ../:/home/node/app:cached
+      - node_modules_volume:/home/node/app/node_modules
+    ports:
+      - 5173:5173
+
+volumes:
+  node_modules_volume:

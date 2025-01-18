@@ -1,0 +1,41 @@
+{
+    "name": "memo",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "react-app",
+    "workspaceFolder": "/home/node/app",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "editor.formatOnSave": true,
+                "[markdown]": {
+                    "editor.defaultFormatter": null,
+                    "editor.formatOnSave": false
+                },
+                "[javascript]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                },
+                "[typescript]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                },
+                "[typescriptreact]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                },
+            },
+            "extensions": [
+                "MS-CEINTL.vscode-language-pack-ja",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "mhutchie.git-graph",
+                "bradlc.vscode-tailwindcss"
+            ]
+        }
+    },
+    "postCreateCommand": "npm install",
+    "remoteUser": "node"
+}
