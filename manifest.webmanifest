@@ -1,0 +1,1 @@
+{"name":"PWA Memo","short_name":"Memo","start_url":"./","display":"standalone","background_color":"#ffffff","lang":"en","scope":"./","description":"PWA Memo App","theme_color":"#cccccc","icons":[{"src":"/public/react.svg","sizes":"192x192","type":"image/svg+xml"},{"src":"/public/vite.svg","sizes":"512x512","type":"image/svg+xml"}]}
