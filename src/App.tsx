@@ -1,19 +1,21 @@
-import { useState } from "react";
 import { Note } from "./Note";
 import NoteList from "./NoteList";
 import NoteEditor from "./NoteEditor";
 import "./App.css";
 
 function App() {
-  const [notes, setNotes] = useState<Note[]>([]);
-
-  // useEffect(() => {
-  //   fetchNotes();
-  // }, []);
-
-  const fetchNotes = async () => {
-    // TODO：処理を追加
-  };
+  const notes: Note[] = [
+    {
+      id: 1,
+      title: "Note 1",
+      content: "Hello, World!",
+    },
+    {
+      id: 2,
+      title: "Note 2",
+      content: "Hello, React!",
+    },
+  ];
 
   const handleNewNote = () => {
     // TODO: 処理を追加
